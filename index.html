@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open-Meteo Weather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Weather Info</h1>
+        <form id="locationForm">
+            <input type="text" id="latitude" placeholder="Latitude (e.g., 40.71)" required>
+            <input type="text" id="longitude" placeholder="Longitude (e.g., -74.01)" required>
+            <button type="submit">Get Weather</button>
+        </form>
+        <div id="weatherResult">
+            <p>Temperature: <span id="temperature"></span>°C</p>
+            <p>Condition: <span id="condition"></span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
